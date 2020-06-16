@@ -18,17 +18,34 @@
     <body>
         <section id="topview">
             <div id="topright">
-                <p id="R">  &#9479; </p>
+                <div id="R">  
+                    <p class="btnarea" onclick="controlnav()">&#9776; </p>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>About</li>
+                        <li>Meet Friends</li>
+                        <li>Register Subjects</li>
+                        <li>Performance</li>
+                        <li>Team</li>
+                    </ul>
+                </div>
                 <p id="L">Search</p>
                 <p id="big">YouLearn</p>
                 <br>
                 <p id="program"><a href="program.html"> &#9944; Subjects </a></p>
 
                 <p id="degree"> &#10064; CBT </p>
-                <p id="discover"> <a href="discover.html">&#9776;Discover</a></p>
+                <p id="discover"> <a href="discover.html">&#9479; Discover</a></p>
             </div>
 
             
         </section>
+        <script>
+            function controlnav(){
+                document.getElementById("R").classList.toggle('active');
+            }
+        </script>
+
     </body>
 </html>

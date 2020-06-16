@@ -3,7 +3,7 @@
     background-color: darkcyan;
     padding: 0.1% 1% 0.1% 1%;
     
-    color: white;
+    color: gainsboro;
     font-weight: bold;
    
 
@@ -15,10 +15,40 @@
     width: 20%;
 }
 #R{
+    position: fixed;
     float: right;
-   
+    
+    width:  30% ;
+    right: -30%;
+   transition: all 500ms linear
 }
 
+#R ul li{
+    background-color: white;
+    color: black;
+    text-align: center;
+    list-style: none;
+    padding: 0.5%;
+    border-bottom: 1px solid black;
+}
+#R ul{
+    border: 1px solid black;
+}
+#R .btnarea{
+    position: fixed;
+    right:5%;   
+}
+
+#R .btnarea:hover{
+    cursor: pointer;
+}
+#R.active{
+    right: 5% ;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
 #big{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -26,64 +56,23 @@
 }
 
 
-#program, #degree{
+#program, #degree, #discover{
    
    text-align: center;
      width: 30% ;
-                
-    float: left;
-                
-    clear: right;
 }
 
 
 #L::before{
    content: "\15F0E";
 }
-#program, #degree, #discover{
-    text-align: center;
-}
+
 a{
-    color: white;
+    color: gainsboro;
     text-decoration: none;
 }
 
 
 
-@media (max-width: 800px){
-#topview{
-    
-    background-color: darkcyan ;
-    padding: 0.1% 1% 0.0% 1%;
-
-    color: white;
-    font-weight: bold;}
-
-    #program, #degree, #discover{
-            text-align: center;
-    }
-
-    #program, #degree{
-   width: 30% ;
-   float: left; 
-   clear: none ;
-    }
-   
-
-   
-
-        #L{
-            float: right;
-        }
-        #R{
-            float: right;
-            clear: right;
-            }
-
-    a{
-        color: white;
-        text-decoration: none;
-    }
-    }
 
 

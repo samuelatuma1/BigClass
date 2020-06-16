@@ -7,11 +7,11 @@
         
         <style>
             
-            #just{
-                content: "HELLO";
-                color: black;
-                background-color: rgb(255, 255, 255);
+            #discover{
                 
+            border: 2px solid white;
+            background-color: white;
+            color: black;
             }
         </style>
     </head>
@@ -20,18 +20,37 @@
     <body>
         <section id="topview">
             <div id="topright">
-                <p id="R">  &#9479; </p>
+                <div id="topright">
+                    <div id="R">  
+                        <p class="btnarea" onclick="controlnav()">&#9776; </p>
+                        <br>
+                        <br>
+                        <ul>
+                            
+                            <li>About</li>
+                            <li>Meet Friends</li>
+                            <li>RegisterSubjects</li>
+                            <li>Performance</li>
+                            <li>Team</li>
+                        </ul>
+    
+                    </div>
                 <p id="L">Search</p>
                 <p id="big">YouLearn</p>
                 <br>
                 <p id="program"><a href="program.html"> &#9944; Subjects </a></p>
                 <p id="degree"><a href="CBTpractice.html"> &#10064; CBT</a></p>
-                <p id="discover"><span id="just"> &nbsp; &nbsp; &#9776; Discovery</span></p>
+                <p id="discover"> &#9479; Discovery</p>
                 <!--Please note that &nbsp; simply creates extra spaces, while &#9776 creates the menu icon-->
             </div>
             
 
             
         </section>
+        <script>
+            function controlnav(){
+                document.getElementById("R").classList.toggle('active');
+            }
+        </script>
     </body>
 </html>
