@@ -17,8 +17,7 @@
 #R{
     position: fixed;
     float: right;
-    
-    width:  30% ;
+    width:  30%;
     right: -30%;
    transition: all 500ms linear;
 }
