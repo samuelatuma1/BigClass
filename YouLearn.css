@@ -42,8 +42,8 @@
     cursor: pointer;
 }
 #R.active{
-    right: 2% ;
-    width:70%;
+    right: 0% ;
+    width:100%;
     
 }
 ul{
